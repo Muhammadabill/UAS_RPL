@@ -44,11 +44,26 @@ Aplikasi telah dideploy dan dapat diakses secara publik melalui:
 
 ## 📂 Struktur Arsitektur File
 ```text
-Gasskeun-Rental/
-├── admin/               # Modul manajerial admin (Monitoring, Laporan, Data Pelanggan)
-├── assets/              # Aset statis (CSS Frameworks, Image Assets)
-├── database/            # Skema basis data .sql untuk standarisasi struktur tabel
-├── index.php            # Entry point aplikasi (Autentikasi & Login)
-├── user.php             # Dashboard interaktif untuk pelanggan
-├── koneksi.php          # Konfigurasi gerbang komunikasi PHP dan MySQL
-└── README.md            # Dokumentasi teknis sistem
+Gasskeun-Rental-Motor/
+├── img/                         # Direktori aset gambar unit motor
+│   ├── vario.jpg                # Contoh aset gambar
+│   ├── beat.jpg
+│   └── nmax.jpg
+├── database/                    # Direktori penyimpanan skema database
+│   └── gasskeun_rental.sql      # Backup database MySQL (untuk evaluasi penguji)
+├── admin.php                    # Dashboard utama admin
+├── admin_monitoring.php         # Monitoring ketersediaan unit untuk admin
+├── data_pelanggan.php           # Manajemen basis data pelanggan
+├── index.php                    # Landing page dan sistem autentikasi (Login/Register)
+├── kembali_motor.php            # Logika pemrosesan pengembalian unit
+├── koneksi.php                  # Konfigurasi gateway database (PHP-MySQL)
+├── laporan_pendapatan.php       # Modul rekapitulasi finansial otomatis
+├── logout.php                   # Pemutusan sesi pengguna (Destroy session)
+├── monitoring.php               # Status ketersediaan unit secara real-time
+├── proses_sewa.php              # Server-side logic untuk transaksi penyewaan
+├── riwayat_admin.php            # Log transaksi keseluruhan (sisi admin)
+├── riwayat_user.php             # Log transaksi personal (sisi pelanggan)
+├── simpan_transaksi.php         # Eksekusi penyimpanan data ke database
+├── style.css                    # Definisi styling antarmuka (UI Design)
+├── user.php                     # Dashboard utama pelanggan (Katalog Motor)
+└── README.md                    # Dokumentasi teknis sistem (RPL Standard)
