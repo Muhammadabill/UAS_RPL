@@ -1,0 +1,41 @@
+body.bg-dark-custom {
+    background-color: #1c1c1c; /* Latar belakang gelap sesuai gambar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    border: none;
+}
+
+.nav-pills .nav-link {
+    color: #555;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #dc3545 !important; /* Warna merah */
+    color: white !important;
+}
+
+.form-control {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+    transform: translateY(-2px);
+}
